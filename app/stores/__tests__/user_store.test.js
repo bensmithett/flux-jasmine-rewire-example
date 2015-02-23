@@ -21,8 +21,8 @@ describe("UserStore", function () {
     // action handler and call it with some fake actions in our tests.
 
     // For this to be possible, the action handler needs to be declared in the
-    // top scope of the store, and not just be an anonymous function passed to
-    // Dispatcher.register
+    // top level scope of the store, and not just be an anonymous function passed 
+    // to Dispatcher.register
     this.registeredCallback = this.UserStore.__get__("registeredCallback");
   });
 
